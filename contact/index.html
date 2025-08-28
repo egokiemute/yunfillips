@@ -222,15 +222,25 @@
           <div class="row">
             <div class="col-lg-6">
               <div class="contact-bg03">
-                <form class="contact-form">
+                <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="14ec3192-f7bf-40ce-9535-bbc21acc"
+                  />
+                  <input
+                    type="hidden"
+                    name="subject"
+                    value="-- Admission Form from Website --"
+                  />
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="contact-field p-relative c-name mb-20">
-                        <label for="firstn">First Name</label>
+                        <label for="fname">First Name</label>
                         <input
                           type="text"
-                          id="firstn"
-                          name="firstn"
+                          id="fname"
+                          name="fname"
                           placeholder="First Name"
                           required
                         />
@@ -238,11 +248,11 @@
                     </div>
                     <div class="col-lg-6">
                       <div class="contact-field p-relative c-name mb-20">
-                        <label for="lastn">Last Name</label>
+                        <label for="lname">Last Name</label>
                         <input
                           type="text"
-                          id="lastn"
-                          name="lastn"
+                          id="lname"
+                          name="lname"
                           placeholder="Last Name"
                           required
                         />
@@ -320,7 +330,7 @@
             </div>
             <div class="col-lg-6">
               <div class="contact-img2">
-                <img src="../img/bg/contact-img.png" alt="image" />
+                <img src="../img/bg/faq-img.jpg" width="600px" height="660px" style="object-fit: cover; border-radius: 20px;" alt="img" />
               </div>
             </div>
           </div>
@@ -502,5 +512,6 @@
     <script src="../js/jquery.magnific-popup.min.js"></script>
     <script src="../js/element-in-view.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/contact-form.js"></script>
   </body>
 </html>
